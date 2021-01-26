@@ -1,5 +1,5 @@
 #welcome {
-  background: url(../img/headerbg.jpg);
+  background: rgb(0, 0, 0);
   color: white;
   padding-bottom: 50px;
   text-align: center;
@@ -10,7 +10,7 @@
 }
 
 #registered {
-  background-color: $base-blue;
+  background-color: $base-primary;
   color: white;
   padding-bottom: 50px;
   text-align: center;
@@ -24,7 +24,7 @@
   }
 
   a:visited {
-    color: darken($base-tan, 10%);
+    color: darken($base-secondary, 10%);
   }
 }
 
@@ -56,7 +56,7 @@
   $mobile-navbar-width: 700px;
 
   clear: both;
-  background: darken($base-blue, 10%);
+  background: darken($base-primary, 10%);
   margin-bottom: 2%;
   width: 100%;
 
@@ -153,7 +153,7 @@
 }
 
 #signup-form {
-  background-color: $base-blue;
+  background-color: $base-primary;
   color: white;
   overflow: auto;
   padding: 1.5em 0;
@@ -163,7 +163,7 @@
   }
 
   .button {
-    background-color: darken($base-tan, 10%);
+    background-color: $yellow-color;
     border: 0;
     border-radius: 3px;
     color: white;
@@ -202,11 +202,11 @@
     }
 
     .time {
-      color: #999999;
+      color: #000000;
     }
 
     .title {
-      color: darken($base-tan, 20%);
+      color: $base-primary;
     }
 
     p {
@@ -223,8 +223,33 @@
   }
 }
 
+.prize-box {
+  border: 2px solid black;
+  list-style: none;
+  padding: 0;
+
+  .prize {
+    display: flex;
+    padding: 12px 5px;
+
+    .title {
+      color: #000000;
+      font-size: 1.5em;
+      margin: 0.2em 0.6em;
+    }
+
+    p {
+      margin: 0.2em 1em;
+    }
+  }
+
+  .prize__body {
+
+  }
+}
+
 #faq {
-  background-color: $base-blue;
+  background-color: $base-primary;
   color: white;
 }
 
@@ -302,7 +327,7 @@
 footer {
   $spacing-amount: 30px;
 
-  background-color: darken($base-blue, 10%);
+  background-color: darken($base-primary, 10%);
   color: white;
   font-size: 16px;
   padding-bottom: $spacing-amount;
@@ -354,24 +379,28 @@ footer {
   }
 
   .first {
-    width: 65%;
+    width: 75%;
   }
 
   .second {
-    width: 45%;
+    width: 55%;
   }
 
   .third {
-    width: 30%;
+    width: 40%;
   }
 
   .fourth {
-    width: 22%;
+    width: 32%;
+  }
+
+  .fifth {
+    width: 25%;
   }
 }
 
 #timer {
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: rgba(0, 0, 0, 0);
   margin: 2em auto 2em;
   padding: .5em;
   width: 60%;
